@@ -1,1 +1,35 @@
-# sum-of-array-elements
+#include<bits/stdc++.h>
+
+using namespace std;
+
+int sumElement(int arr[],int n)
+{
+    int sum=0;
+    for(int i=0;i<n;i++)
+    {
+        sum=sum+arr[i];
+        
+    }
+    return sum;
+}
+
+int main()
+{
+    int t;
+    cin>>t;
+    
+    while(t--)
+    {
+        int n; 
+        cin>>n;
+        int arr[n];
+        for(int i=0;i<n;i++)
+        {
+            cin>>arr[n];
+        }
+        cout<<sumElement(arr,n)<<endl;
+    }
+    return 0;
+    
+}
+
